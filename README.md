@@ -37,6 +37,14 @@ If performing a ``url`` based install:
          - { role: crowdstrike.falcon_installer, crowdstrike.install_method: url, crowdstrike.download_url: https://fqdn/falcon-sensor.rpm, crowdstrike.cid: yourCID }
 ```
 
+You may also specify tags:
+```yaml
+    - hosts: servers
+      roles:
+         - { role: crowdstrike.falcon_installer, crowdstrike.install_method: url, crowdstrike.download_url: https://fqdn/falcon-sensor.rpm, crowdstrike.cid: yourCID, crowdstrike.tags: ["yourTag1", "yourTag2"] }
+```
+
+
 License
 -------
 

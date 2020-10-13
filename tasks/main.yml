@@ -4,9 +4,9 @@
 - name: CrowdStrike Falcon Installer | Validate Required Parameters and Endpoint Environment
   assert:
     that:
-        - crowdstrike.api_url is defined
-        - crowdstrike.api_client_id is defined
-        - crowdstrike.api_client_secret is defined
+        - crowdstrike.api.url is defined
+        - crowdstrike.api.client_id is defined
+        - crowdstrike.api.client_secret is defined
         - ansible_pkg_mgr is defined
         - ansible_pkg_mgr in ['yum', 'apt']
 
